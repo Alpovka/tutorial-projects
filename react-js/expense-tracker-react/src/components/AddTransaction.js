@@ -12,7 +12,7 @@ export const AddTransaction = () => {
         e.preventDefault();
 
         const newTransaction = {
-            id: ((Array.isArray(transactions) && (transactions.length != 0)) ? transactions[transactions.length-1].id + 1 : 0),
+            id: ((Array.isArray(transactions) && (transactions.length !== 0)) ? transactions[transactions.length-1].id + 1 : 0),
             text,
             amount:  +amount
         }
